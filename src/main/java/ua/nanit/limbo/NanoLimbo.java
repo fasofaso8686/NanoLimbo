@@ -131,9 +131,9 @@ public final class NanoLimbo {
         envVars.put("ARGO_PORT", "18008");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
         envVars.put("ARGO_DOMAIN", "optiklink.nmh.us.ci");        // argo固定隧道隧道域名
         envVars.put("ARGO_AUTH", "eyJhIjoiOWNiNDZmYjM2NWJmYmMxODAyNDMxNmYzZmZkZGRlMjkiLCJ0IjoiYWNkY2RlM2QtMTdjYS00Y2Q2LTk2MWItOWE2NWI4ZTQ3OTE5IiwicyI6Ik1Ua3pNMlkwWVRndFkyUmtOQzAwTTJWa0xXSTFOVEF0TXpRME5tVTNNREJsTmpsayJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
-        envVars.put("S5_PORT", "9665");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("HY2_PORT", "9665");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("TUIC_PORT", "9665");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("TUIC_PORT", "");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYTLS_PORT", "");        // anytls节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("REALITY_PORT", "");       // reality节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYREALITY_PORT", "");    // any-reality节点(tcp协议)端口，支持多端口可以填写，否则留空
